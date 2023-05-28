@@ -127,5 +127,17 @@ $darkPurple: rgb(130, 0, 182);
         }
       }
     }
+    
+  }
+  // FOOTER
+  footer {
+    margin-top: 100px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      height: 50px;
+    }
   }
 }
