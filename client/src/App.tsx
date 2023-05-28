@@ -1,6 +1,7 @@
 import './style.scss'
 import {
   createBrowserRouter,
+  Outlet,
   RouterProvider,
 } from "react-router-dom";
 import Register from './pages/Register';
@@ -15,7 +16,7 @@ const Layout = () => {
   return (
     <>
       <Navbar/>
-      <Home/>
+      <Outlet/>
       <Footer/>
     </>
   );
