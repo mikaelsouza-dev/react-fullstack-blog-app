@@ -1,4 +1,4 @@
-import './App.css'
+import './style.scss'
 import {
   createBrowserRouter,
   RouterProvider,
