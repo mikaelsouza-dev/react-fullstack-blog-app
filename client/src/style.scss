@@ -1,25 +1,41 @@
 * {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-$lightGreen: #b9e7e7;
-$darkGreen: teal;
+$lightPurple: #cf67ff;
+$darkPurple: rgb(130, 0, 182);
 
 .app {
+  display: flex;
+  justify-content: center;
   .container {
-    // login and register
+    width: 1024px;
+    
+    .link {
+      text-decoration: none;
+      color: inherit;
+      transition: all .3s;
 
+      &:hover {
+        color: $darkPurple;
+      }
+    }
+    
+    // login and register
     .auth {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       height: 100vh;
-      background-color: $lightGreen;
+      background-color: $lightPurple;
     }
     h1 {
       font-size: 20px;
-      color: $darkGreen;
+      color: $darkPurple;
       margin-bottom: 20px;
     }
     form {
@@ -39,14 +55,14 @@ $darkGreen: teal;
       button {
         padding: 10px;
         border: none;
-        background-color: $darkGreen;
+        background-color: $darkPurple;
         color: white;
         cursor: pointer;
         transition: all .5s;
         outline: none;
       }
       button:hover {
-        background-color: $lightGreen;
+        background-color: $lightPurple;
       }
 
       span {
@@ -58,6 +74,57 @@ $darkGreen: teal;
         font-size: 12px;
         color: red;
         text-align: center;
+      }
+    }
+  }
+
+  //NAVBAR
+  .navbar {
+    .container {
+      padding: 10px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .logo {
+        img {
+          width: 120px;
+        }
+      }
+      .links {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        font-weight: bold;
+
+        h6 {
+          font-size: 12px;
+          font-weight: bold;
+        }
+
+        span {
+          cursor: pointer;
+          border: 1px solid $darkPurple;
+          padding: 10px;
+          border-radius: 10px;
+          transition: all 0.5s;
+          &:hover {
+            background-color: $lightPurple;
+            color: black;
+          }
+        }
+
+        .write {
+          background-color: $lightPurple;
+          padding: 10px;
+          border-radius: 10px;
+          border: 1px solid $darkPurple;
+          transition: all .5s;
+          &:hover {
+            color: $darkPurple;
+            background-color: #fff;
+            border: 1px solid $darkPurple;
+          }
+        }
       }
     }
   }
